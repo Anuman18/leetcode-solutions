@@ -1,10 +1,8 @@
 """
 Problem: Valid Palindrome
 Link: https://leetcode.com/problems/valid-palindrome/
-Difficulty: 
-
-Approach:
-
-Time Complexity:
-Space Complexity:
 """
+
+def isPalindrome(s):
+    s = ''.join(c.lower() for c in s if c.isalnum())
+    return s == s[::-1]s
